@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Concert de Rock à Bordeaux",
+    "date": "2024-08-15",
+    "location": "Rock School Barbey",
+    "description": "Un concert énergique avec des groupes locaux."
+  },
+  {
+    "title": "Exposition d'Art Contemporain",
+    "date": "2024-09-10",
+    "location": "CAPC Musée d'Art Contemporain",
+    "description": "Découvrez les dernières œuvres d'artistes émergents."
+  },
+  {
+    "title": "Marché des Producteurs Locaux",
+    "date": "2024-07-20",
+    "location": "Place des Quinconces",
+    "description": "Savourez les produits frais de la région."
+  }
+]
