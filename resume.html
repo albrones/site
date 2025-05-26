@@ -1,82 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexis Brones - Resume</title>
-  <!-- Placeholder for styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="main-header">
     <h1>Alexis Brones</h1>
-    <h2>Fullstack Web Developer for positive change</h2>
+    <p class="job-title">Fullstack Web Developer for positive change</p>
+    <img src="#" alt="Placeholder for Alexis Brones' photo" class="image-placeholder">
   </header>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Phone: (+33)615141689</p>
-    <p>Email: alexis.brones.pro@gmail.com</p>
-  </section>
-
-  <section id="summary">
-    <h2>Professional Profile</h2>
-    <p>“I’m a tech passionate and want to thrive my skills in information technology and agile management in projects that positively shape our lives and world. My motto: building effective systems requires smart user experience and lean impacts”</p>
-    <h3>About Me</h3>
-    <p>Passionate by tech and curious by nature, I love discovering and perfecting new skills. Immersed in ecology from my early age, I'm now keen to pass on these values to the IT world through eco- design and responsible digital as much as possible, reducing its impact and making it easier to implement (GreenIT, ShadowIT, Agility). After several experiences in France, my ambition is to move to Northern Europe to widen my experience and expertise, through new challenges and cultural contexts. I believe that we need to prepare and develop our organizations considering the environmental challenges of our society.</p>
-  </section>
-
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <article class="job">
-      <h3>Atos</h3>
-      <h4>Web Developer intern • 2016 - 2017</h4>
-      <p>Atos Integration - Pessac</p>
-      <ul>
-        <li>ACCOR Hotel- Frontend, HOD project - AngularJS/Spring (6 p.)</li>
-        <li>LBP/DISFE - Frontend, FwAD2 lib. project - JavaScript/Angular (2 p.)</li>
+  <main>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> <a href="tel:+33615141689">(+33)615141689</a></p>
+      <p><strong>Email:</strong> <a href="mailto:alexis.brones.pro@gmail.com">alexis.brones.pro@gmail.com</a></p>
+    </section>
+    <section id="summary">
+      <h2>Professional Profile</h2>
+      <p class="lore-quote">“I’m a tech passionate and want to thrive my skills in information technology and agile management in projects that positively shape our lives and world. My motto: building effective systems requires smart user experience and lean impacts”</p>
+      <h3>About Me</h3>
+      <p>Passionate by tech and curious by nature, I love discovering and perfecting new skills. Immersed in ecology from my early age, I'm now keen to pass on these values to the IT world through eco- design and responsible digital as much as possible, reducing its impact and making it easier to implement (GreenIT, ShadowIT, Agility). After several experiences in France, my ambition is to move to Northern Europe to widen my experience and expertise, through new challenges and cultural contexts. I believe that we need to prepare and develop our organizations considering the environmental challenges of our society</p>
+    </section>
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <article class="job-entry">
+        <h3>Atos</h3>
+        <h4>Web Developer intern • 2016 - 2017</h4>
+        <p>Atos Integration - Pessac</p>
+        <ul>
+          <li>ACCOR Hotel- Frontend, HOD project - AngularJS/Spring (6 p.)</li>
+          <li>LBP/DISFE - Frontend, FwAD2 lib. project - JavaScript/Angular (2 p.)</li>
+        </ul>
+      </article>
+      <article class="job-entry">
+        <h3>Zenika</h3>
+        <h4>Fullstack Web developer, Agile, eco-design & responsible digital consultant • 2018 - 2024</h4>
+        <ul>
+          <li>La Banque Postale - Frontend, Mobile app - FwAD (AngularJs) - (8 p.)</li>
+          <li>DOTIC - Fullstack, Fiber infra. app - AngularJs/GraphQL & Kaban - (4 p.)</li>
+          <li>Fatec Group - Frontend & Agile - Nuxt2/Vue2 & Scrum Master - (12 p.) “Zenika has played a pivotal role in guiding Fatec through its digital transformation. I developed together with the project team an application to manage automobile fleets and trained the project team on frontend and agility. ”</li>
+          <li>Manomano - Backend - Java/Spring/Kotlin & Scrum - (2 p. then 6 p.) “For OneStock project, I developed together with another team member a new micro- service interfacing an external solution to handle warehouse fulfillment and stock for a e-commerce platform with performances challenges and I achieved the action standards. ”</li>
+          <li>Splio - Frontend - Jquery/React16 & Scrum - (alone then 6 p.) “In Marketing automation project-a campaign mailing and SMS automation application for business- I refactored and simplified legacy Jquery modules to enable migration to React and reduce technical debt in a context of companies fusion. ”</li>
+          <li>Playplay - Frontend - Vue2/TypeScript/Symfony & Scrumban - (7 p.) “In this project, a video generation application for business, in a context of a startup scaling-up, I identified the need of the architectural/technical migration that I initiated and improved video playback, video generation and dynamic interfaces. I also made frontend training to backend developers for maintenance. ”</li>
+          <li>HelloAsso - Frontend - Nuxt2/3/Vue2/3 & Scrum - (8 p.) “In project Platform, a multi purpose platform for associations, I brought my experience to improve product conception with technical aspect in early process stage and to drive technical migration of the legacy front-end code base and design system. ”</li>
+          <li>Hellowork - Lead Tech - React16/Node/Vite & Scrum Master - (9 people team) “My challenge involves streamlining communication between technical functions and product managers, along with structuring the project team and workflow following the acquisition of Seekube startup. I've bolstered technical expertise in software craftsmanship and project management to maintain high standards for team deliverables. Additionally, I initiated technical migration and implemented a quality survey, ensuring swift responses to client needs. ”</li>
+        </ul>
+      </article>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p class="education-entry">2014 - 2016 • Computer Science degree at Bayonne University</p>
+      <p class="education-entry">2016 - 2017 • Web dev. & digital innovation bachelor at Bordeaux University</p>
+      <p class="education-entry">2018 - 2023 • Professional training courses/Zenika (Java/Kotlin/Spring, Domain Driven Design, Scrum, Test Driven Dev., SaFe, GreenIT, Supervision, Performances, Typescript, Vue.js, etc)</p>
+    </section>
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <p class="certification-entry">2019 • CSM 1 Scrum Master Level 1 by ScrumAlliance</p>
+      <p class="certification-entry">2021 • Eco-design & Sober & Responsible digital by GreenIT.fr</p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <h3>Hard Skills</h3>
+      <ul class="skills-list">
+        <li>Frontend Dev. <span class="sr-only">(4 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></span></li>
+        <li>Backend Dev. <span class="sr-only">(3 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Agility <span class="sr-only">(4 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></span></li>
+        <li>Project Mgmt. <span class="sr-only">(3 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Architecture <span class="sr-only">(2 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span><span class="dot empty"></span></span></li>
+        <li>Trainer <span class="sr-only">(2 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span><span class="dot empty"></span></span></li>
+        <li>Software Craft. <span class="sr-only">(3 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Vue.js <span class="sr-only">(3 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Svelte.js <span class="sr-only">(3 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>React.js <span class="sr-only">(3 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>CI/CD <span class="sr-only">(2 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span><span class="dot empty"></span></span></li>
+        <li>Domain analysis <span class="sr-only">(3 out of 4)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
       </ul>
-    </article>
-    <article class="job">
-      <h3>Zenika</h3>
-      <h4>Fullstack Web developer, Agile, eco-design & responsible digital consultant • 2018 - 2024</h4>
-      <ul>
-        <li>La Banque Postale - Frontend, Mobile app - FwAD (AngularJs) - (8 p.)</li>
-        <li>DOTIC - Fullstack, Fiber infra. app - AngularJs/GraphQL & Kaban - (4 p.)</li>
-        <li>Fatec Group - Frontend & Agile - Nuxt2/Vue2 & Scrum Master - (12 p.) “Zenika has played a pivotal role in guiding Fatec through its digital transformation. I developed together with the project team an application to manage automobile fleets and trained the project team on frontend and agility. ”</li>
-        <li>Manomano - Backend - Java/Spring/Kotlin & Scrum - (2 p. then 6 p.) “For OneStock project, I developed together with another team member a new micro- service interfacing an external solution to handle warehouse fulfillment and stock for a e-commerce platform with performances challenges and I achieved the action standards. ”</li>
-        <li>Splio - Frontend - Jquery/React16 & Scrum - (alone then 6 p.) “In Marketing automation project-a campaign mailing and SMS automation application for business- I refactored and simplified legacy Jquery modules to enable migration to React and reduce technical debt in a context of companies fusion. ”</li>
-        <li>Playplay - Frontend - Vue2/TypeScript/Symfony & Scrumban - (7 p.) “In this project, a video generation application for business, in a context of a startup scaling-up, I identified the need of the architectural/technical migration that I initiated and improved video playback, video generation and dynamic interfaces. I also made frontend training to backend developers for maintenance. ”</li>
-        <li>HelloAsso - Frontend - Nuxt2/3/Vue2/3 & Scrum - (8 p.) “In project Platform, a multi purpose platform for associations, I brought my experience to improve product conception with technical aspect in early process stage and to drive technical migration of the legacy front-end code base and design system. ”</li>
-        <li>Hellowork - Lead Tech - React16/Node/Vite & Scrum Master - (9 people team) “My challenge involves streamlining communication between technical functions and product managers, along with structuring the project team and workflow following the acquisition of Seekube startup. I've bolstered technical expertise in software craftsmanship and project management to maintain high standards for team deliverables. Additionally, I initiated technical migration and implemented a quality survey, ensuring swift responses to client needs. ”</li>
+      <h3>Soft Skills</h3>
+      <ul class="skills-list">
+        <li>Empathy <span class="sr-only">(3 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></span></li>
+        <li>Adaptability <span class="sr-only">(2 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Transparency <span class="sr-only">(2 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Curiosity <span class="sr-only">(3 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></span></li>
+        <li>Emotional Intl. <span class="sr-only">(3 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></span></li>
+        <li>Creativity <span class="sr-only">(2 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Team work <span class="sr-only">(2 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Active listening <span class="sr-only">(2 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Communication <span class="sr-only">(2 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span></span></li>
+        <li>Problem solving <span class="sr-only">(3 out of 3)</span> <span class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></span></li>
       </ul>
-    </article>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p>2014 - 2016 • Computer Science degree at Bayonne University</p>
-    <p>2016 - 2017 • Web dev. & digital innovation bachelor at Bordeaux University</p>
-    <p>2018 - 2023 • Professional training courses/Zenika (Java/Kotlin/Spring, Domain Driven Design, Scrum, Test Driven Dev., SaFe, GreenIT, Supervision, Performances, Typescript, Vue.js, etc)</p>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <p>2019 • CSM 1 Scrum Master Level 1 by ScrumAlliance</p>
-    <p>2021 • Eco-design & Sober & Responsible digital by GreenIT.fr</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <!-- Hard and soft skills will go here -->
-  </section>
-
-  <section id="languages">
-    <h2>Languages</h2>
-    <!-- Language proficiency will go here -->
-  </section>
-
-  <section id="hobbies">
-    <h2>Hobbies</h2>
-    <!-- Hobbies will go here -->
-  </section>
+    </section>
+    <section id="languages">
+      <h2>Languages</h2>
+      <ul class="languages-list">
+        <li>French (fluent)</li>
+        <li>English (technical)</li>
+        <li>Spanish (understanding)</li>
+        <li>Portuguese (BR.) (basic)</li>
+      </ul>
+    </section>
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul class="hobbies-list">
+        <li>Cooking</li>
+        <li>Gardening</li>
+        <li>Woodworking</li>
+        <li>Music</li>
+        <li>Trip</li>
+        <li>Stroll</li>
+        <li>Art</li>
+        <li>Video games</li>
+      </ul>
+    </section>
+  </main>
+  <footer id="main-footer">
+    <!-- Footer content can go here -->
+  </footer>
 </body>
 </html>

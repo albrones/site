@@ -1,0 +1,301 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean sans-serif font */
+  line-height: 1.6;
+  background-color: #1a1a1a; /* Dark background for a futurist feel */
+  color: #e0e0e0; /* Light grey text for contrast */
+  padding: 20px;
+}
+
+/* Main header */
+#main-header {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #444; /* Subtle separator */
+}
+
+#main-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: #ffffff; /* Brighter white for the name */
+}
+
+#main-header .job-title {
+  font-size: 1.2em;
+  color: #00bcd4; /* A futurist accent color (cyan/teal) */
+}
+
+/* Main content area */
+main {
+  max-width: 900px; /* Limit width for readability on larger screens */
+  margin: 0 auto; /* Center the content */
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #2c2c2c; /* Slightly lighter dark shade for sections */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+section h2 {
+  font-size: 1.8em;
+  color: #00bcd4; /* Accent color for section titles */
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+section h3 {
+  font-size: 1.4em;
+  color: #c0c0c0; /* Slightly lighter than main text for subheadings */
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Experience section job entries */
+.job-entry {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #444; /* Dashed separator for job entries */
+}
+.job-entry:last-child {
+  border-bottom: none; /* No border for the last job entry */
+}
+
+.job-entry h3 { /* Company name */
+  color: #00bcd4; /* Accent for company */
+  font-size: 1.5em;
+}
+.job-entry h4 { /* Role and duration */
+  font-size: 1.1em;
+  font-style: italic;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs and Lists */
+p, ul {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none; /* Remove default bullets for now */
+}
+
+ul li {
+  margin-bottom: 5px;
+  padding-left: 15px; /* Indent list items */
+  position: relative;
+}
+
+ul li::before { /* Custom bullet (futuristic feel) */
+  content: '»'; /* Double angle quote or similar */
+  position: absolute;
+  left: 0;
+  color: #00bcd4; /* Accent color for bullets */
+  font-weight: bold;
+}
+
+/* Links */
+a {
+  color: #00bcd4; /* Accent color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Contact info specifics */
+#contact p strong {
+  color: #c0c0c0;
+}
+
+/* Summary quote style */
+.lore-quote {
+  font-style: italic;
+  color: #b0b0b0;
+  padding-left: 20px;
+  border-left: 3px solid #00bcd4;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller desktops */
+@media (max-width: 768px) {
+  body {
+    padding: 15px; /* Reduce body padding */
+  }
+
+  #main-header h1 {
+    font-size: 2em; /* Slightly smaller main title */
+  }
+
+  #main-header .job-title {
+    font-size: 1.1em;
+  }
+
+  section {
+    padding: 15px; /* Reduce section padding */
+  }
+
+  section h2 {
+    font-size: 1.6em; /* Smaller section titles */
+  }
+
+  section h3 {
+    font-size: 1.2em; /* Smaller sub-section titles */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  body {
+    padding: 10px; /* Further reduce body padding */
+    font-size: 15px; /* Adjust base font size for mobile readability */
+  }
+
+  #main-header h1 {
+    font-size: 1.8em; /* Smaller main title for mobile */
+  }
+
+  #main-header .job-title {
+    font-size: 1em;
+  }
+
+  section {
+    padding: 10px; /* Reduce section padding for mobile */
+    margin-bottom: 20px; /* Reduce space between sections */
+  }
+
+  section h2 {
+    font-size: 1.4em; /* Smaller section titles for mobile */
+    margin-bottom: 10px; /* Adjust spacing */
+    padding-bottom: 5px;
+  }
+
+  section h3 {
+    font-size: 1.1em; /* Smaller sub-section titles for mobile */
+    margin-bottom: 8px;
+  }
+
+  ul li {
+    padding-left: 12px; /* Adjust padding for custom bullet */
+  }
+  
+  /* Ensure contact links are easily tappable */
+  #contact p {
+    margin-bottom: 15px; 
+  }
+  #contact a {
+    display: inline-block; /* Make link area slightly larger */
+    padding: 5px 0;
+  }
+
+}
+
+/* Skill Dots Styling */
+.skill-dots {
+  display: inline-flex; /* Align dots horizontally */
+  align-items: center;
+  margin-left: 10px; /* Space between skill name and dots */
+  vertical-align: middle; /* Align with text */
+}
+
+.dot {
+  width: 12px;         /* Size of the dot */
+  height: 12px;        /* Size of the dot */
+  border-radius: 50%;  /* Make it a circle */
+  margin-right: 4px;   /* Space between dots */
+  background-color: #555; /* Default for empty or if something goes wrong */
+}
+
+.dot:last-child {
+  margin-right: 0; /* No margin for the last dot in a set */
+}
+
+.dot.filled {
+  background-color: #00bcd4; /* Accent color for filled dots */
+}
+
+.dot.empty {
+  background-color: #4f4f4f; /* A darker grey for empty dots, distinct from section bg */
+  border: 1px solid #5f5f5f; /* Subtle border for empty dots */
+}
+
+/* Adjust list item padding if custom bullets were used, skill dots might need different alignment */
+#skills ul li {
+  padding-left: 0; /* Remove padding if it was for old text bullets */
+  display: flex; /* Align skill name and dots nicely */
+  justify-content: space-between; /* Push dots to the right if desired, or remove for left align */
+  align-items: center;
+  margin-bottom: 8px; /* Space between skill items */
+}
+
+/* Remove the old global li::before custom bullet for skills section if it conflicts */
+#skills ul li::before {
+  content: none; /* Remove if it was adding '»' or similar */
+}
+
+/* Accessibility Enhancements */
+
+/* For screen reader accessibility - hide visually but keep available for SRs */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+a:focus {
+  outline: 2px solid #00bcd4; /* Using the accent color */
+  outline-offset: 2px;
+}
+
+/* Image Placeholder Styling */
+.image-placeholder {
+  display: block; /* Or inline-block if preferred for centering with text-align on parent */
+  width: 150px;   /* Example width */
+  height: 150px;  /* Example height */
+  background-color: #444; /* A neutral dark placeholder color */
+  border: 2px dashed #666; /* Dashed border to indicate it's a placeholder */
+  border-radius: 50%; /* Optional: if a circular placeholder is desired */
+  margin: 15px auto; /* Center the block, add some space above/below */
+  text-align: center; /* For any potential text inside (though not used here) */
+  line-height: 150px; /* Vertical align text if any */
+  color: #888; /* Color for any potential text */
+  font-size: 0.9em;
+}
+
+/* If you want to add placeholder text via CSS (optional) */
+/*
+.image-placeholder::before {
+  content: "Photo";
+}
+*/
