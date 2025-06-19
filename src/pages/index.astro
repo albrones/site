@@ -1,0 +1,163 @@
+---
+import MobileSocials from '@components/home/MobileSocials.astro';
+import { Button, Card, Pill } from '@eliancodes/brutal-ui';
+import Layout from '@layouts/Default.astro';
+
+const builtWith = [
+  { name: 'Astro', url: 'https://astro.build/' },
+  { name: 'UnoCSS', url: 'https://uno.antfu.me/' },
+  {
+    name: 'Content Collections',
+    url: 'https://docs.astro.build/en/guides/content-collections/',
+  },
+  { name: 'RSS', url: 'https://docs.astro.build/en/guides/rss/' },
+  {
+    name: 'Sitemap',
+    url: 'https://docs.astro.build/en/guides/integrations-guide/sitemap/',
+  },
+  { name: 'Vercel', url: 'https://vercel.com' },
+  { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+];
+---
+
+<Layout
+  title="Home"
+  pageTitle="Brutal Theme | Home"
+  description="Brutal is a minimalistic, neobrutalism theme for Astro."
+>
+  <main class="bg-pink p-6">
+    <MobileSocials />
+    <section class="mb-8">
+      <h2 class="text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif">Welcome.</h2>
+      <section id="about" class="grid md:grid-cols-8 gap-8 mt-4">
+        <h2 class="hidden">About Brutal</h2>
+        <div class="col-span-6">
+          <Card>
+            <div class="flex flex-col justify-between items-start gap-4">
+              <p class="mt-4 outfit text-2xl md:text-5xl lg:text-7xl">
+                This website is my personal playground.
+                <p class="mt-2 outfit text-xl md:text-3xl lg:text-5xl">
+                  I want to build a simple hub to aggregate all my
+                  experimentations with various technologies. I found that
+                  <a
+                    href="https://docs.astro.build/en/concepts/islands/"
+                    target="_blank"
+                    class="text-white"
+                  >
+                    Astro Islands Architecture
+                  </a> looks perfect for my little sandbox.
+                </p>
+              </p>
+              {
+                false && (
+                  /* implement with the page */ <Button
+                    target={'_self'}
+                    href="/experimentations/"
+                  >
+                    Check out the latest &rarr;
+                  </Button>
+                )
+              }
+            </div>
+          </Card>
+        </div>
+        <div class="col-span-2">
+          <Card>
+            <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif">
+              How is it made ?
+            </h2>
+            <p class="poppins mb-4">
+              This app is mainly done by my hand using open-sourced or original
+              ressources. Also this has been coded with help of AI and tools
+              like <a
+                href="https://www.cursor.com/"
+                target="_blank"
+                class="text-white"
+              >
+                Cursor
+              </a> and <a
+                href="https://gemini.google.com/app"
+                target="_blank"
+                class="text-white"
+              >
+                Gemini
+              </a> for the best and the worst.
+            </p>
+            <p class="poppins">
+              As a developer I need to learn and evolve with society, as a
+              community we have the capacity to drive changment for the better
+              of all of us.
+            </p>
+          </Card>
+        </div>
+      </section>
+    </section>
+    <section>
+      <h2 class="text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif">
+        About starter theme
+      </h2>
+      <section id="about" class="grid md:grid-cols-8 gap-8 mt-4">
+        <h2 class="hidden">About Brutal</h2>
+        <div class="col-span-4">
+          <Card>
+            <div class="flex flex-col justify-between items-start gap-4">
+              <p class="mt-4 outfit text-2xl md:text-5xl lg:text-7xl">
+                Brutal theme for <a
+                  class="text-white"
+                  target="_blank"
+                  href="https://astro.build/">Astro</a
+                >
+              </p>
+              <p class="mt-2 outfit text-xl md:text-3xl lg:text-5xl">
+                A minimalistic, neobrutalism theme for Astro by <a
+                  href="https://www.elian.codes/"
+                  target="_blank"
+                  class="text-white">ElianCodes</a
+                >
+              </p>
+            </div>
+          </Card>
+        </div>
+        <div class="col-span-2">
+          <Card>
+            <h2 class="text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif">
+              Brutal is built with
+            </h2>
+            <ul class="flex gap-4 flex-wrap">
+              {
+                builtWith.map((item) => (
+                  <li>
+                    <Pill>
+                      <a
+                        class="sanchez"
+                        href={item.url}
+                        target="_blank"
+                        title={`Go to ${item.name}`}
+                      >
+                        {item.name}
+                      </a>
+                    </Pill>
+                  </li>
+                ))
+              }
+            </ul>
+          </Card>
+        </div>
+        <div class="col-span-2">
+          <Card>
+            <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif">
+              What is Brutal?
+            </h2>
+            <p class="poppins">
+              Brutal is a theme built with Astro, UnoCSS by <a
+                href="https://www.elian.codes/">Elian</a
+              >. It's a simple, fast, and modern theme that is easy to use and
+              customize. Mainly meant to power blogs and personal websites.
+            </p>
+          </Card>
+        </div>
+      </section>
+    </section>
+    <!-- <RecentBlogPosts /> -->
+  </main>
+</Layout>

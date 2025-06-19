@@ -1,0 +1,20 @@
+---
+import Resume from '@components/resume/Resume.astro';
+import Layout from '@layouts/Default.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog').then((collection) =>
+  collection.reverse()
+);
+---
+
+<Layout
+  title='Resume'
+  description='Brutal Blog | On this page you can find my resume and work experience.'
+  classList='h-full'
+  pageTitle='Resume'
+>
+  <main class='bg-green p-6'>
+    <Resume/>
+  </main>
+</Layout>

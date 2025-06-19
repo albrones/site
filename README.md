@@ -1,38 +1,91 @@
-# sv
+# Brutal - The neobrutalist Astro theme
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Brutal is a minimal neobrutalist theme for [Astro](https://astro.build/). It's based on Neobrutalist Web Design, a movement that aims to create websites with a minimalistic and functional design. It has some integrations like Image Optimization, RSS, Sitemap, ready to get your SEO done right.
 
-## Creating a project
+The theme has no JavaScript integration out of the box, but can always be added of course.
 
-If you're seeing this, you've probably already done this step. Congrats!
+This template is based on [my own personal website](<https://www.elian.codes/>), with some more generic things added.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Usage
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+You can bootstrap a new Astro project using Brutal with the following command:
 
 ```bash
-npm run dev
+# pnpm
+pnpm create astro@latest -- --template eliancodes/brutal
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# pnpm
+pnpm create astro@latest --template eliancodes/brutal
+
+# yarn
+yarn create astro --template eliancodes/brutal
 ```
 
-## Building
+### Commands
 
-To create a production version of your app:
+All commands are run from the root of the project, from a terminal:
 
-```bash
-npm run build
+(Here I use PNPM, no problem if you use NPM or Yarn)
+
+| Command             | Action                                             |
+| :------------------ | :------------------------------------------------- |
+| `pnpm install`      | Installs dependencies                              |
+| `pnpm dev`          | Starts local dev server at `localhost:4321`        |
+| `pnpm build`        | Build your production site to `./dist/`            |
+| `pnpm preview`      | Preview your build locally, before deploying       |
+| `pnpm astro ...`    | Run CLI commands like `astro add`, `astro preview` |
+| `pnpm astro --help` | Get help using the Astro CLI                       |
+
+## Integrations
+
+### UnoCSS
+
+In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It's a utility-first CSS framework that uses a single class to style elements. It's very easy to use and has a lot of features. It's setup to be completely compatible with TailwindCSS, with the advantage of being able to use PureCSS icons. You can always switch out UnoCSS for TailwindCSS if you want to, without breaking the general styles.
+
+### Sitemap
+
+To generate the sitemap, you don't need to do anything. It's automatically generated when you build your site. You'll just need to switch out the `site` on `astro.config.ts` to your own.
+
+```js title="astro.config.mjs"
+import { defineConfig } from 'astro/config';
+
+export default defineConfig({
+  site: 'https://example.com',
+});
 ```
 
-You can preview the production build with `npm run preview`.
+### RSS
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+The RSS feed is automatically generated from the Markdown files in the `src/content/blog` folder. You can ofcourse completely change this to your own needs.
+
+The RSS will output to `https://example.com/feed.xml` by default. You can change this, by renaming `src/pages/feed.xml.js`.
+
+### Image
+
+## Components
+
+### `components/blog/`
+
+This directory contains all components for the blog.
+
+### `components/errors/`
+
+This directory contains all error components.
+
+#### `components/errors/404.astro`
+
+This component is used when a page is not found.
+
+### `components/generic/`
+
+This directory contains all generic components, reused over multiple pages.
+
+### `components/home/`
+
+This directory contains all components for the home page.
+
+### `components/layout/`
+
+This directory contains all layout components. For instance, the header and footer and `<head>` section.
+
+If you need more from this theme, don't hesitate to open an issue or reach out to me!
