@@ -1,5 +1,7 @@
 ---
 import { Card } from '@eliancodes/brutal-ui';
+import { Image } from 'astro:assets';
+import portrait from '../../assets/Alexis.png';
 ---
 
 <!-- <div class="bg-pink p-6"> -->
@@ -34,11 +36,9 @@ import { Card } from '@eliancodes/brutal-ui';
 
     <section class="col-span-2" aria-label="Profile photo">
       <Card>
-        <img
-          src="/profile.jpg"
-          alt="Portrait of Alexis Brones"
-          class="w-44 h-44 rounded-full object-cover border-2 border-white mx-auto"
-        />
+        <Image  src={portrait}
+        alt="Portrait of Alexis Brones"
+      />
       </Card>
     </section>
 
