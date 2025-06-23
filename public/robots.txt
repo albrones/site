@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
-Host: https://brutal.elian.codes/
-Sitemap: https://brutal.elian.codes/sitemap-index.xml
+Host: https://site-albro.vercel.app/
+Sitemap: https://site-albro.vercel.app/sitemap-index.xml

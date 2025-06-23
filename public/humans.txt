@@ -1,6 +1,6 @@
-## Brutal Theme ##
+## Site.albro ##
 
-All development & Content by Elian Van Cutsem
+All development & Content by Alexis Brones
 
-- email: hello@elian.codes
-- website: www.elian.codes
+- email: alexis.brones.pro@gmail.com
+- website: https://site-albro.vercel.app/

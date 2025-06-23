@@ -15,6 +15,6 @@ export async function GET(context) {
       link: `/blog/${post.id}/`,
     })),
     customData: '<language>en-us</language>',
-    canonicalUrl: 'https://brutal.elian.codes',
+    canonicalUrl: 'https://site-albro.vercel.app',
   });
 }

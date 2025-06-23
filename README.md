@@ -1,25 +1,8 @@
-# Brutal - The neobrutalist Astro theme
+# site.albro - My personal playground
 
-Brutal is a minimal neobrutalist theme for [Astro](https://astro.build/). It's based on Neobrutalist Web Design, a movement that aims to create websites with a minimalistic and functional design. It has some integrations like Image Optimization, RSS, Sitemap, ready to get your SEO done right.
+This website is a experiment on my free time. I want to build a hub website to redirect or integrate other project using [Astro Islands architecture](https://docs.astro.build/en/concepts/islands/) with various technologies of my experimentations (apps, games, tools, etc). 
 
-The theme has no JavaScript integration out of the box, but can always be added of course.
-
-This template is based on [my own personal website](<https://www.elian.codes/>), with some more generic things added.
-
-## Usage
-
-You can bootstrap a new Astro project using Brutal with the following command:
-
-```bash
-# pnpm
-pnpm create astro@latest -- --template eliancodes/brutal
-
-# pnpm
-pnpm create astro@latest --template eliancodes/brutal
-
-# yarn
-yarn create astro --template eliancodes/brutal
-```
+This implements Brutal, a minimal neobrutalist theme for [Astro](https://astro.build/) made by [ElianCodes](https://www.elian.codes/). It's based on Neobrutalist Web Design, a movement that aims to create websites with a minimalistic and functional design. It has some integrations like Image Optimization, RSS, Sitemap, ready to get your SEO done right.
 
 ### Commands
 
@@ -36,7 +19,23 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `pnpm astro --help` | Get help using the Astro CLI                       |
 
+## Features
+
+- [ ] Hub
+- [x] Resume: Normal
+- [ ] Resume: Caracter Selector
+- [ ] Games (Flappy-dino, Emojis...)
+- [ ] Tools (Converters, formaters)
+- [ ] Gallery (IG impl. or homemade)
+- [ ] Seasons
+- [ ] BuJo
+- [ ] Habit tracker/metrics
+
 ## Integrations
+
+### Vercel
+
+This website is automatically build and deployed using Vercel.
 
 ### UnoCSS
 
@@ -59,33 +58,3 @@ export default defineConfig({
 The RSS feed is automatically generated from the Markdown files in the `src/content/blog` folder. You can ofcourse completely change this to your own needs.
 
 The RSS will output to `https://example.com/feed.xml` by default. You can change this, by renaming `src/pages/feed.xml.js`.
-
-### Image
-
-## Components
-
-### `components/blog/`
-
-This directory contains all components for the blog.
-
-### `components/errors/`
-
-This directory contains all error components.
-
-#### `components/errors/404.astro`
-
-This component is used when a page is not found.
-
-### `components/generic/`
-
-This directory contains all generic components, reused over multiple pages.
-
-### `components/home/`
-
-This directory contains all components for the home page.
-
-### `components/layout/`
-
-This directory contains all layout components. For instance, the header and footer and `<head>` section.
-
-If you need more from this theme, don't hesitate to open an issue or reach out to me!

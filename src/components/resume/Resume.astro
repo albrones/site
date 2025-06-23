@@ -1,5 +1,7 @@
 ---
 import { Card } from '@eliancodes/brutal-ui';
+import { Image } from 'astro:assets';
+import portrait from '../../assets/Alexis.png';
 ---
 
 <!-- <div class="bg-pink p-6"> -->
@@ -9,8 +11,11 @@ import { Card } from '@eliancodes/brutal-ui';
     Alexis Brones
   </h3>
 
-  <div class="grid md:grid-cols-8 gap-8">
-    <section class="col-span-6" aria-labelledby="contact-heading">
+  <div class="grid grid-cols-1 md:grid-cols-8 gap-4 md:gap-8">
+    <section
+      class="md:col-span-6"
+      aria-labelledby="contact-heading"
+    >
       <Card>
         <h4
           id="contact-heading"
@@ -20,7 +25,7 @@ import { Card } from '@eliancodes/brutal-ui';
         </h4>
         <address class="poppins">
           <strong class="text-xl">Alexis Brones</strong><br />
-           Fullstack Web Developer for positive change<br />
+          Fullstack Web Developer for positive change<br />
           <a href="tel:+33615141689" class="text-white hover:text-pink"
             >(+33) 6 15 14 16 89</a
           ><br />
@@ -32,17 +37,16 @@ import { Card } from '@eliancodes/brutal-ui';
       </Card>
     </section>
 
-    <section class="col-span-2" aria-label="Profile photo">
+    <section
+      class="md:col-span-2"
+      aria-label="Profile photo"
+    >
       <Card>
-        <img
-          src="/profile.jpg"
-          alt="Portrait of Alexis Brones"
-          class="w-44 h-44 rounded-full object-cover border-2 border-white mx-auto"
-        />
+        <Image src={portrait} alt="Portrait of Alexis Brones" />
       </Card>
     </section>
 
-    <section class="col-span-8" aria-labelledby="about-heading">
+    <section class="md:col-span-8" aria-labelledby="about-heading">
       <Card>
         <h4
           id="about-heading"
@@ -65,7 +69,7 @@ import { Card } from '@eliancodes/brutal-ui';
       </Card>
     </section>
 
-    <section class="col-span-4" aria-labelledby="experience-heading">
+    <section class="md:col-span-4" aria-labelledby="experience-heading">
       <Card>
         <h4
           id="experience-heading"
@@ -73,173 +77,175 @@ import { Card } from '@eliancodes/brutal-ui';
         >
           Experiences
         </h4>
-        <div class="space-y-6">
-          <article>
-            <h4 class="text-xl outfit mb-2">2016 - 2017 • Atos</h4>
-            <p class="poppins mb-4">
-              Atos Integration - Pessac Web Developer intern • ACCOR Hotel-
-              Frontend, HOD project - AngularJS/Spring (6 p.) • LBP/DISFE -
-              Frontend, FwAD2 lib. project - JavaScript/Angular (2 p.)
-            </p>
-          </article>
-          <article>
-            <h4 class="text-xl outfit mb-2">2018 - 2024 • Zenika</h4>
-            <p class="poppins mb-4">
-              Fullstack Web developer, Agile, eco-design & responsible digital
-              consultant
-            </p>
-            <div class="relative">
-              <div class="absolute left-1.5 top-0 bottom-0 w-0.5 bg-white">
+        <div class="md:max-h-[820px] md:overflow-y-scroll">
+          <div class="space-y-6">
+            <article>
+              <h4 class="text-xl outfit mb-2">2018 - 2024 • Zenika</h4>
+              <p class="poppins mb-4">
+                Fullstack Web developer, Agile, eco-design & responsible digital
+                consultant
+              </p>
+              <div class="relative">
+                <div class="absolute left-1.5 top-0 bottom-0 w-0.5 bg-white">
+                </div>
+                <ul class="space-y-8 relative">
+                  <li class="poppins">
+                    <div class="flex items-start gap-4">
+                      <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 bg-white"></div>
+                      </div>
+                      <div class="p-4">
+                        <strong>Hellowork</strong> - Lead Tech - React16/Node/Vite
+                        & Scrum Master - (9 people team)<br />
+                        <small class="text-gray-300"
+                          >"My challenge involves streamlining communication
+                          between technical functions and product managers,
+                          along with structuring the project team and workflow
+                          following the acquisition of Seekube startup. I've
+                          bolstered technical expertise in software
+                          craftsmanship and project management to maintain high
+                          standards for team deliverables."</small
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="poppins">
+                    <div class="flex items-start gap-4">
+                      <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 bg-white"></div>
+                        <div class="w-0.5 h-full bg-white"></div>
+                      </div>
+                      <div class="p-4">
+                        <strong>HelloAsso</strong> - Frontend - Nuxt2/3/Vue2/3 &
+                        Scrum - (8 p.)<br />
+                        <small class="text-gray-300"
+                          >"In project Platform, a multi purpose platform for
+                          associations, I brought my experience to improve
+                          product conception with technical aspect in early
+                          process stage and to drive technical migration of the
+                          legacy front-end code base and design system."</small
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="poppins">
+                    <div class="flex items-start gap-4">
+                      <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 bg-white"></div>
+                        <div class="w-0.5 h-full bg-white"></div>
+                      </div>
+                      <div class="p-4">
+                        <strong>Playplay</strong> - Frontend - Vue2/TypeScript/Symfony
+                        & Scrumban - (7 p.)<br />
+                        <small class="text-gray-300"
+                          >"In this project, a video generation application for
+                          business, in a context of a startup scaling-up, I
+                          identified the need of the architectural/technical
+                          migration that I initiated and improved video
+                          playback, video generation and dynamic interfaces."</small
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="poppins">
+                    <div class="flex items-start gap-4">
+                      <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 bg-white"></div>
+                        <div class="w-0.5 h-full bg-white"></div>
+                      </div>
+                      <div class="p-4">
+                        <strong>Splio</strong> - Frontend - Jquery/React16 & Scrum
+                        - (alone then 6 p.)<br />
+                        <small class="text-gray-300"
+                          >"In Marketing automation project-a campaign mailing
+                          and SMS automation application for business- I
+                          refactored and simplified legacy Jquery modules to
+                          enable migration to React and reduce technical debt in
+                          a context of companies fusion."</small
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="poppins">
+                    <div class="flex items-start gap-4">
+                      <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 bg-white"></div>
+                        <div class="w-0.5 h-full bg-white"></div>
+                      </div>
+                      <div class="p-4">
+                        <strong>Manomano</strong> - Backend - Java/Spring/Kotlin
+                        & Scrum - (2 p. then 6 p.)<br />
+                        <small class="text-gray-300"
+                          >"For OneStock project, I developed together with
+                          another team member a new micro-service interfacing an
+                          external solution to handle warehouse fulfillment and
+                          stock for a e-commerce platform with performances
+                          challenges and I achieved the action standards."</small
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="poppins">
+                    <div class="flex items-start gap-4">
+                      <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 bg-white"></div>
+                        <div class="w-0.5 h-full bg-white"></div>
+                      </div>
+                      <div class="p-4">
+                        <strong>Fatec Group</strong> - Frontend & Agile - Nuxt2/Vue2
+                        & Scrum Master - (12 p.)<br />
+                        <small class="text-gray-300"
+                          >"Zenika has played a pivotal role in guiding Fatec
+                          through its digital transformation. I developed
+                          together with the project team an application to
+                          manage automobile fleets and trained the project team
+                          on frontend and agility."</small
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="poppins">
+                    <div class="flex items-start gap-4">
+                      <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 bg-white"></div>
+                        <div class="w-0.5 h-full bg-white"></div>
+                      </div>
+                      <div class="p-4">
+                        <strong>DOTIC</strong> - Fullstack, Fiber infra. app - AngularJs/GraphQL
+                        & Kaban - (4 p.)
+                      </div>
+                    </div>
+                  </li>
+                  <li class="poppins">
+                    <div class="flex items-start gap-4">
+                      <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 bg-white"></div>
+                        <div class="w-0.5 h-full bg-white"></div>
+                      </div>
+                      <div class="p-4">
+                        <strong>La Banque Postale</strong> - Frontend, Mobile app
+                        - FwAD (AngularJs) - (8 p.)
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <ul class="space-y-8 relative">
-                <li class="poppins">
-                  <div class="flex items-start gap-4">
-                    <div class="flex flex-col items-center">
-                      <div class="w-3 h-3 bg-white"></div>
-                      <div class="w-0.5 h-full bg-white"></div>
-                    </div>
-                    <div class="p-4">
-                      <strong>La Banque Postale</strong> - Frontend, Mobile app
-                      - FwAD (AngularJs) - (8 p.)
-                    </div>
-                  </div>
-                </li>
-                <li class="poppins">
-                  <div class="flex items-start gap-4">
-                    <div class="flex flex-col items-center">
-                      <div class="w-3 h-3 bg-white"></div>
-                      <div class="w-0.5 h-full bg-white"></div>
-                    </div>
-                    <div class="p-4">
-                      <strong>DOTIC</strong> - Fullstack, Fiber infra. app -
-                      AngularJs/GraphQL & Kaban - (4 p.)
-                    </div>
-                  </div>
-                </li>
-                <li class="poppins">
-                  <div class="flex items-start gap-4">
-                    <div class="flex flex-col items-center">
-                      <div class="w-3 h-3 bg-white"></div>
-                      <div class="w-0.5 h-full bg-white"></div>
-                    </div>
-                    <div class="p-4">
-                      <strong>Fatec Group</strong> - Frontend & Agile -
-                      Nuxt2/Vue2 & Scrum Master - (12 p.)<br />
-                      <small class="text-gray-300"
-                        >"Zenika has played a pivotal role in guiding Fatec
-                        through its digital transformation. I developed together
-                        with the project team an application to manage
-                        automobile fleets and trained the project team on
-                        frontend and agility."</small
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li class="poppins">
-                  <div class="flex items-start gap-4">
-                    <div class="flex flex-col items-center">
-                      <div class="w-3 h-3 bg-white"></div>
-                      <div class="w-0.5 h-full bg-white"></div>
-                    </div>
-                    <div class="p-4">
-                      <strong>Manomano</strong> - Backend - Java/Spring/Kotlin &
-                      Scrum - (2 p. then 6 p.)<br />
-                      <small class="text-gray-300"
-                        >"For OneStock project, I developed together with
-                        another team member a new micro-service interfacing an
-                        external solution to handle warehouse fulfillment and
-                        stock for a e-commerce platform with performances
-                        challenges and I achieved the action standards."</small
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li class="poppins">
-                  <div class="flex items-start gap-4">
-                    <div class="flex flex-col items-center">
-                      <div class="w-3 h-3 bg-white"></div>
-                      <div class="w-0.5 h-full bg-white"></div>
-                    </div>
-                    <div class="p-4">
-                      <strong>Splio</strong> - Frontend - Jquery/React16 & Scrum
-                      - (alone then 6 p.)<br />
-                      <small class="text-gray-300"
-                        >"In Marketing automation project-a campaign mailing and
-                        SMS automation application for business- I refactored
-                        and simplified legacy Jquery modules to enable migration
-                        to React and reduce technical debt in a context of
-                        companies fusion."</small
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li class="poppins">
-                  <div class="flex items-start gap-4">
-                    <div class="flex flex-col items-center">
-                      <div class="w-3 h-3 bg-white"></div>
-                      <div class="w-0.5 h-full bg-white"></div>
-                    </div>
-                    <div class="p-4">
-                      <strong>Playplay</strong> - Frontend -
-                      Vue2/TypeScript/Symfony & Scrumban - (7 p.)<br />
-                      <small class="text-gray-300"
-                        >"In this project, a video generation application for
-                        business, in a context of a startup scaling-up, I
-                        identified the need of the architectural/technical
-                        migration that I initiated and improved video playback,
-                        video generation and dynamic interfaces."</small
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li class="poppins">
-                  <div class="flex items-start gap-4">
-                    <div class="flex flex-col items-center">
-                      <div class="w-3 h-3 bg-white"></div>
-                      <div class="w-0.5 h-full bg-white"></div>
-                    </div>
-                    <div class="p-4">
-                      <strong>HelloAsso</strong> - Frontend - Nuxt2/3/Vue2/3 &
-                      Scrum - (8 p.)<br />
-                      <small class="text-gray-300"
-                        >"In project Platform, a multi purpose platform for
-                        associations, I brought my experience to improve product
-                        conception with technical aspect in early process stage
-                        and to drive technical migration of the legacy front-end
-                        code base and design system."</small
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li class="poppins">
-                  <div class="flex items-start gap-4">
-                    <div class="flex flex-col items-center">
-                      <div class="w-3 h-3 bg-white"></div>
-                    </div>
-                    <div class="p-4">
-                      <strong>Hellowork</strong> - Lead Tech - React16/Node/Vite
-                      & Scrum Master - (9 people team)<br />
-                      <small class="text-gray-300"
-                        >"My challenge involves streamlining communication
-                        between technical functions and product managers, along
-                        with structuring the project team and workflow following
-                        the acquisition of Seekube startup. I've bolstered
-                        technical expertise in software craftsmanship and
-                        project management to maintain high standards for team
-                        deliverables."</small
-                      >
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </article>
+            </article>
+            <article>
+              <h4 class="text-xl outfit mb-2">2016 - 2017 • Atos</h4>
+              <p class="poppins mb-4">
+                Atos Integration - Pessac Web Developer intern • ACCOR Hotel-
+                Frontend, HOD project - AngularJS/Spring (6 p.) • LBP/DISFE -
+                Frontend, FwAD2 lib. project - JavaScript/Angular (2 p.)
+              </p>
+            </article>
+          </div>
         </div>
       </Card>
     </section>
 
     <section
-      class="col-span-4"
+      class="md:col-span-4"
       aria-labelledby="education-certifications-heading"
     >
       <Card>
@@ -279,7 +285,7 @@ import { Card } from '@eliancodes/brutal-ui';
         </Card>
       </section>
       <section class="col-span-4 mt-8">
-        <div class="grid grid-cols-2 gap-8 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           <section aria-labelledby="language-heading">
             <Card>
               <h4
@@ -322,7 +328,7 @@ import { Card } from '@eliancodes/brutal-ui';
       </section>
     </section>
 
-    <section class="col-span-8" aria-labelledby="skills-heading">
+    <section class="md:col-span-8" aria-labelledby="skills-heading">
       <Card>
         <h4
           id="skills-heading"
@@ -330,7 +336,7 @@ import { Card } from '@eliancodes/brutal-ui';
         >
           Skills
         </h4>
-        <div class="grid grid-cols-2 gap-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
           <div class="poppins">
             <h3 class="text-2xl outfit mb-2">Hard Skills</h3>
             <ul class="space-y-2">
@@ -534,6 +540,3 @@ import { Card } from '@eliancodes/brutal-ui';
     </section>
   </div>
 </Card>
-<!-- </div> -->
-
-<!-- </div> -->

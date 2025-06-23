@@ -1,4 +1,18 @@
 ---
+const socialsData = [
+  {
+    name: 'GitHub',
+    url: 'https://github.com/albrones/site',
+    icon: 'i-uil-github',
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/alexis-brones-02b670129',
+    icon: 'i-uil-linkedin',
+  },
+  { name: 'RSS', url: '/feed.xml', icon: 'i-uil-rss' },
+];
+
 interface Props {
   pageTitle?: string;
 }
@@ -7,15 +21,6 @@ const navigationItems = [
   { name: 'Home', url: '/' },
   // { name: 'Blog', url: '/blog/' },
   { name: 'Resume', url: '/resume/' },
-];
-
-const socialIcons = [
-  {
-    name: 'GitHub',
-    url: 'https://github.com/albrones/site',
-    icon: 'i-uil-github',
-  },
-  // { name: 'RSS', url: '/feed.xml', icon: 'i-uil-rss' },
 ];
 
 const { pageTitle } = Astro.props;
@@ -43,13 +48,13 @@ const { pageTitle } = Astro.props;
         ))
       }
       {
-        socialIcons.map((item) => (
+        socialsData.map((item) => (
           <li>
             <a
               href={item.url}
               class="hover:text-green hover:underline transition-all duration-150 ease-in-out"
               target="_blank"
-              title={`'See @ElianCodes on ${item.name}`}
+              title={`'See @albro on ${item.name}`}
             >
               <div class:list={[item.icon, 'w-6 h-6']} />
             </a>
@@ -58,10 +63,12 @@ const { pageTitle } = Astro.props;
       }
     </ul>
   </nav>
+  <!-- 
+  Todo: Add mobile navigation
   <nav class="md:hidden flex">
     <h2 class="hidden">Mobile Navigation</h2>
     <ul>
       <li><a href="/blog/">Blog</a></li>
     </ul>
-  </nav>
+  </nav> -->
 </header>
