@@ -1,0 +1,34 @@
+---
+import { Card } from '@eliancodes/brutal-ui';
+import Layout from '@layouts/Default.astro';
+
+---
+
+<Layout
+  title="Games"
+  description="A collection of games."
+  pageTitle="Games.albro | Play"
+>
+  <main class="bg-green p-6 min-h-screen">
+    <section>
+      <h1 class="text-4xl md:text-6xl mb-8 dm-serif">Games</h1>
+      <p class="poppins mb-6 text-lg text-gray-200">
+        Welcome to my games lab! Here you'll find small games and interactive experiments built for fun and learning.<br>
+        More coming soon.
+      </p>
+      <div class="space-y-4">
+        <Card>
+          <div></div>
+          <span class="font-bold">Flappy Dino</span>
+          <span class="ml-2 text-gray-200">(Coming soon)</span>
+        </Card>
+        <Card>
+          <span class="font-bold">Craftmoji</span>
+          <span class="ml-2 text-gray-200">(Coming soon)</span>
+        </Card>
+        <Card>
+          <span class="font-bold">Other mini-games</span>
+          <span class="ml-2 text-gray-200">(Stay tuned!)</span>
+        </Card>
+      </div>
+    </section>

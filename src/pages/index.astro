@@ -47,17 +47,30 @@ const builtWith = [
                   </a> looks perfect for my little sandbox.
                 </p>
               </p>
-              {
-                false && (
-                  /* implement with the page */ <Button
-                    target={'_self'}
-                    href="/experimentations/"
-                  >
-                    Check out the latest &rarr;
-                  </Button>
-                )
-              }
+              <div>
+                <p class="mt-2 outfit text-xl md:text-3xl lg:text-5xl mb-4">
+                  I want to share my work, my ideas, and my projects with the
+                  world. This is a place where I can experiment, learn, and grow
+                  as a developer. See my lastest features just below.
+                </p>
+              <div class="flex flex-wrap gap-4">
+
+                <Button
+                  target={'_self'}
+                  href="/resume/"
+                >
+                  Resume &rarr;
+                </Button>
+                <Button
+                  target={'_self'}
+                  href="/games/"
+                >
+                  Games &rarr;
+                </Button>
+              </div>
             </div>
+          </div>
+
           </Card>
         </div>
         <div class="col-span-2">
@@ -89,6 +102,7 @@ const builtWith = [
             </p>
           </Card>
         </div>
+
       </section>
     </section>
     <section>
