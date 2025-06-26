@@ -1,7 +1,6 @@
 ---
-import { Card } from '@eliancodes/brutal-ui';
+import { Button, Card } from '@eliancodes/brutal-ui';
 import Layout from '@layouts/Default.astro';
-
 ---
 
 <Layout
@@ -13,14 +12,30 @@ import Layout from '@layouts/Default.astro';
     <section>
       <h1 class="text-4xl md:text-6xl mb-8 dm-serif">Games</h1>
       <p class="poppins mb-6 text-lg text-gray-200">
-        Welcome to my games lab! Here you'll find small games and interactive experiments built for fun and learning.<br>
+        Welcome to my games lab! Here you'll find small games and interactive
+        experiments built for fun and learning.<br />
         More coming soon.
       </p>
       <div class="space-y-4">
         <Card>
-          <div></div>
-          <span class="font-bold">Flappy Dino</span>
-          <span class="ml-2 text-gray-200">(Coming soon)</span>
+          <div class="flex flex-col gap-2 items-start">
+            <span class="font-bold">Flappy Dino</span>
+            <span class="text-gray-200 mb-4">
+              A fun browser game where you control a dino to avoid obstacles.
+              Inspired by the classic
+              <a href="https://en.wikipedia.org/wiki/Flappy_Bird" target="_blank" class="text-white underline">
+                Flappy Bird
+              </a> game and Chrome easter-egg 
+              <a
+                href="https://fr.wikipedia.org/wiki/T._Rex_Game"
+                target="_blank"
+                class="text-white underline">
+                T.Rex game
+                </a>.
+            </span>
+            <!-- TODO: add Flappy Dino image  -->
+            <Button href="/games/flappy-dino">Play now &rarr;</Button>
+          </div>
         </Card>
         <Card>
           <span class="font-bold">Craftmoji</span>
@@ -32,3 +47,5 @@ import Layout from '@layouts/Default.astro';
         </Card>
       </div>
     </section>
+  </main>
+</Layout>
